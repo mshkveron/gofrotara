@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Расчет стоимости</title>
+    <link rel= "stylesheet" href = "static/style/style_4.css">
+    <link rel="stylesheet" href="static/style/media.css">
+    
+</head>
+
+
+<body>
+  <div class="all">
+
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+  <div class="logo_menu">
+      <img src="static/img/logo_menu.PNG" alt="лого меню">
+  </div>
+  
+  <div class="menu">
+      <ul>
+  
+      <a href="index.html">ГЛАВНАЯ</a>
+      <a href="page2.html">КАТАЛОГ</a>
+      <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+      <a href="page4.html" class="active">РАСЧЕТ СТОИМОСТИ</a>
+      <a href="page5.html">КОНТАКТЫ</a>      
+  
+  </ul>
+  
+  </div>
+  
+  <!-- Иконка бургерменю -->
+  <div class="burger">
+      <span></span>
+  </div>
+  
+  </header>
+  
+  <!-- Скрипт для бургерменю -->
+  <script>
+      document.querySelector('.burger').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('.menu').classList.toggle('open');
+      })
+  </script>
+
+
+
+<div class="wrapper">
+
+    <div class="form">
+        <form action="#" id="form" class="form_body">
+            <h1 class="form_title">Заявка на расчет стоимости</h1>
+
+            <!-- Вид продукции: -->
+            <div class="form_item">
+                <div class="form_label">Вид продукции:</div>
+                <select name="vid_product" class="select">
+                    <option value="Гофрокартон"selected>Гофрокартон</option>
+                    <option value="Коробки"selected>Коробки</option>
+                    <option value="Гофролотки для овощей и фруктов"selected>Гофролотки для ОВОЩЕЙ и ФРУКТОВ</option>
+                    <option value="Гофролотки для банок и бутылок"selected>Гофролотки для БАНОК и БУТЫЛОК</option>
+                    <option value="Гофролотки для мясных полуфабрикатов" selected>Гофролотки для МЯСНЫХ ПОЛУФАБРИКОТОВ</option>
+                    <option value="Гофролотки для кондитерских изделий" selected>Гофролотки для КОНДИТЕРСКИХ ИЗДЕЛИЙ</option>
+                    <option value="Гофролотки для пиццы" selected>Гофролотки для ПИЦЦЫ</option>
+                    <option value="Комплектующие к гофрокоробкам: ВКЛАДЫШИ" selected>Комплектующие к гофрокоробкам: ВКЛАДЫШИ</option>
+                    <option value="Комплектующие к гофрокоробкам: РЕШЕТКИ" selected>Комплектующие к гофрокоробкам: РЕШЕТКИ</option>
+                    <option value="Комплектующие к гофрокоробкам: ПЕРЕГОРОДКИ" selected>Комплектующие к гофрокоробкам: ПЕРЕГОРОДКИ</option>
+                    <option value="Комплектующие к гофрокоробкам: ВСТАВКИ И ЛОЖМЕНТЫ" selected>Комплектующие к гофрокоробкам: ВСТАВКИ И ЛОЖМЕНТЫ</option>
+                    <option value="#" selected></option>
+                    <option value="Лента малярная" selected>Лента малярная</option>
+                    <option value="Скотч с надписями" selected>Скотч с надписями</option>
+                    <option value="Скотч прозрачный" selected>Скотч прозрачный</option>
+                    <option value="Диспенсер для скотча" selected>Диспенсер для скотча</option>
+                    <option value="Стреч пленка" selected>Стреч пленка</option>
+                    <option value="Стреппинг лента" selected>Стреппинг лента</option>
+                </select>
+            </div>
+
+            <!-- Длина -->
+            <div class="form_item">
+                <label for="formLength" class="form_label">Длина:</label>
+                <input id="formLength" type="text" name="length" class="form_input" placeholder="в мм." >
+            </div>
+
+            <!-- Ширина -->
+            <div class="form_item">
+                <label for="formWidth" class="form_label">Ширина:</label>
+                <input id="formWidth" type="text" name="width" class="form_input" placeholder="в мм." >
+            </div>
+    
+            <!-- Высота -->
+            <div class="form_item">
+                <label for="formHeight" class="form_label">Высота:</label>
+                <input id="formHeight" type="text" name="height" class="form_input" placeholder="в мм." >
+            </div>
+
+            <!-- Тип гофрокартона -->
+            <div class="form_item">
+                <div class="form_label">Тип гофрокартона:</div>
+                <select name="tip_gofro" class="select">
+                    <option value="B"selected>B</option>
+                    <option value="C"selected>C</option>
+                </select>
+            </div>
+
+            <!-- Марка -->
+            <div class="form_item">
+                <div class="form_label">Марка:</div>
+                <select name="marka" class="select">
+                    <option value="Т-21" selected>Т-21</option>
+                    <option value="Т-22" selected>Т-22</option>
+                    <option value="Т-23" selected>Т-23</option>
+                    <option value="Т-24" selected>Т-24</option>
+                    <option value="Т-25" selected>Т-25</option>
+                    <option value="Т-26" selected>Т-26</option>
+                </select>
+            </div>
+
+            <!-- Цвет покровного слоя -->
+            <div class="form_item">
+                <div class="form_label">Цвет покровного слоя:</div>
+                <select name="color" class="select">
+                    <option value="Бурый" selected>Бурый</option>
+                    <option value="Белый" selected>Белый</option>
+                </select>
+            </div>
+
+            <!-- Печать -->
+            <div class="form_item">
+                <div class="form_label">Печать:</div>
+                <select name="print" class="select">
+                    <option value="Без печати" selected>Без печати</option>
+                    <option value="Печать в 1 цвет" selected>Печать в 1 цвет</option>
+                    <option value="Печать в 2 цвета" selected>Печать в 2 цвета</option>
+                </select>
+            </div>
+
+            <!-- Тираж -->
+            <div class="form_item">
+                <label for="formKolvo" class="form_label">Тираж:</label>
+                <input id="formKolvo" type="text" name="kolvo" class="form_input" placeholder="в шт." >
+            </div>
+
+            <!-- Упаковка -->
+            <div class="form_item">
+                <div class="form_label">Упаковка:</div>
+                <select name="upakovka" class="select">
+                    <option value="Нет" selected>Нет</option>
+                    <option value="Да" selected>Да</option>
+                </select>
+            </div>
+
+            <!-- Доставка -->
+            <div class="form_item">
+                <div class="form_label">Доставка:</div>
+                <select name="dostavka" class="select">
+                    <option value="Нет" selected>Нет</option>
+                    <option value="Да" selected>Да</option>
+                </select>
+            </div>
+
+            <!-- Ваше имя -->
+            <div class="form_item">
+                <label for="formName" class="form_label">Ваше имя*:</label>
+                <input id="formName" type="text" name="name" class="form_input _req">
+            </div>
+
+            <!-- Номер телефона -->
+            <div class="form_item">
+                <label for="formPhone" class="form_label">Номер телефона*:</label>
+                <input id="formPhone" type="text" name="phone" class="form_input _req">
+            </div>
+
+            <!-- Адрес доставки -->
+            <div class="form_item">
+                <label for="formAdress" class="form_label">Адрес доставки:</label>
+                <input id="formAdress" type="text" name="adress" class="form_input">
+            </div>
+
+            <!-- Адрес электронной почты -->
+            <div class="form_item">
+                <label for="formEmail" class="form_label">Email*:</label>
+                <input id="formEmail" type="text" name="email" class="form_input _req _email">
+            </div>
+
+            <!-- Название организации -->
+            <div class="form_item">
+                <label for="formOrganiz" class="form_label">Название организации:</label>
+                <input id="formOrganiz" type="text" name="organiz" class="form_input">
+            </div>
+
+            <!-- Доп. информация -->
+            <div class="form_item">
+                <label for="formMessage" class="form_label">Сообщение:</label>
+                <textarea name="message" id="formMessage" class="form_input"></textarea>
+            </div>
+
+            <!-- Согласие на обработку персорнальных данных -->
+            <div class="form_item">
+                <div class="checkbox">
+                    <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
+                    <label for="formAgreement" class="checkbox_label"><span>Я даю свое <a href="soglasie.html">
+                        Согласие на обработку персональных данных</a></span></label>
+                </div>
+            </div>
+
+            <button type="submit" class="form_button">Отправить</button>
+        </form>
+    </div>
+
+</div>
+
+
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+    </div>
+  
+    </div>
+
+    <script src="page_4.js"></script>
+  </body>
+  
+  
+  </html>

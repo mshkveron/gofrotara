@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Каталог</title>
+    <link rel= "stylesheet" href = "static/style/style_catalog.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+    <!-- <div class="all"> -->
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+    <div class="logo_menu">
+        <img src="static/img/logo_menu.PNG" alt="лого меню">
+    </div>
+    
+    <div class="menu">
+        <ul>
+    
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="page2.html" class="active">КАТАЛОГ</a>
+        <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+        <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+        <a href="page5.html">КОНТАКТЫ</a>      
+    
+    </ul>
+    
+    </div>
+    
+    <!-- Иконка бургерменю -->
+    <div class="burger">
+        <span></span>
+    </div>
+    
+    </header>
+    
+    <!-- Скрипт для бургерменю -->
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('open');
+        })
+    </script>
+
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<!-- Кнопка НАЗАД -->
+
+<div class="back">
+
+<a href="page2.html"> <<  ВЕРНУТЬСЯ К КАТАЛОГУ</a>
+
+</div>
+
+
+<!-- Каталог товары -->
+<div class="catalog">
+    <!-- Двухслойный -->
+    <div class="product">
+        <img src="static/img/catalog/meat.jpg" alt="Гофролотки для мясных полуфабрикантов">
+                
+        <div class="text">
+        <h3>ДЛЯ МЯСНЫХ ПОЛУФАБРИКАНТОВ</h3>
+            <div class="text-info">
+            <p><span>Лотки для мясных полуфабрикатов</span>- это самосборные гофрокороба, которые должны быть устойчивыми к перепаду температуры, так как предназначены специально для хранения замороженных продуктов. Гофролотки для мяса и птицы как правило используются для транспортировки и хранения мяса скота, свинины и птицы. </p>
+            <p><span>Характеристики:</span></p>
+            <p>Изготавливается по размерам заказчика как из бурого, так и из белого гофрокартона.</p>
+            <p>Марки гофрокартона: T-23; Т-24; Т-25; Т-26</p>
+            <p>Тип гофра: B, C</p>
+            <p>Толщина: от 3,0 до 3,8 мм</p>
+            <p>Возможно нанесение печати различных цветов.</p>
+            <p>Так как гофроупаковка должна выдерживать не только низкие температуры и последующий процесс оттаивания без последствия и потери прочности упаковочного материала.</p>
+            </div>
+
+            <div class="buttom">
+                <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+</div>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

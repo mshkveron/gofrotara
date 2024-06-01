@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Каталог</title>
+    <link rel= "stylesheet" href = "static/style/style_2.1.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+    <!-- <div class="all"> -->
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+    <div class="logo_menu">
+        <img src="static/img/logo_menu.PNG" alt="лого меню">
+    </div>
+    
+    <div class="menu">
+        <ul>
+    
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="page2.html" class="active">КАТАЛОГ</a>
+        <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+        <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+        <a href="page5.html">КОНТАКТЫ</a>      
+    
+    </ul>
+    
+    </div>
+    
+    <!-- Иконка бургерменю -->
+    <div class="burger">
+        <span></span>
+    </div>
+    
+    </header>
+    
+    <!-- Скрипт для бургерменю -->
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('open');
+        })
+    </script>
+
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+
+<div class="catalog-info">
+    <h2>КАТАЛОГ ТОВАРОВ</h2>
+    <h3>ГОФРОКАРТОН</h3>
+</div>
+
+<div class="cat-gofrokarton">
+
+    <div class="card">
+
+
+<img class="catalog-img" src="static/img/catalog/dvuhsloiniy.jpg">
+
+<div class="card-title">ДВУХСЛОЙНЫЙ</div>
+
+
+<div class="btm-more"> 
+    <a class="boton-more" href="dvuhsloiniy.html">ПОДРОБНЕЕ</a>
+</div>
+
+
+<div class="btm-buy"> 
+    <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+</div>
+
+    </div>
+
+<div class="card">
+
+
+    <img class="catalog-img" src="static/img/catalog/trehsloiniy.jpg">
+    
+    <div class="card-title">ТРЕХСЛОЙНЫЙ</div>
+    
+    
+    <div class="btm-more"> 
+        <a class="boton-more" href="trehsloiniy.html">ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+    
+    
+    </div>
+
+</div>
+
+
+<div class="catalog-info">
+
+    <h2>ИЗДЕЛИЯ ИЗ КАРТОНОВ</h2>
+    <h3>ГОФРОЯЩИКИ</h3>
+    
+</div>
+
+<div class="cat-gofrokarton">
+
+<div class="card">
+
+
+<img class="catalog-img" src="static/img/catalog/yasik.jpg">
+
+<div class="card-title">ЧЕТЫРЕХКЛАПАННЫЙ</div>
+
+
+<div class="btm-more"> 
+    <a class="boton-more" href="korobka.html">ПОДРОБНЕЕ</a>
+</div>
+
+
+<div class="btm-buy"> 
+    <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+</div>
+
+
+</div>
+
+<div class="card">
+
+
+    <img class="catalog-img" src="static/img/catalog/arhivniy.jpg">
+    <div class="card-title">АРХИВНЫЕ</div>
+    
+    
+    <div class="btm-more"> 
+        <a class="boton-more" href="arhivn.html">ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+    
+    
+    </div>
+
+<div class="card">
+
+
+    <img class="catalog-img" src="static/img/catalog/samosborniy.jpg">
+        
+    <div class="card-title">САМОСБОРНЫЕ</div>
+        
+        
+    <div class="btm-more"> 
+        <a class="boton-more" href="samosborniy.html">ПОДРОБНЕЕ</a>
+    </div>
+        
+        
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+        
+        
+    </div>
+
+</div>
+
+
+<div class="catalog-info">
+
+    <h3>ГОФРОЛОТКИ</h3>
+    
+</div>
+
+<div class="cat-gofrokarton">
+
+<div class="card">
+
+
+<img class="catalog-img" src="static/img/catalog/veg_fr.jpg">
+
+<div class="card-title">ДЛЯ ОВОЩЕЙ И ФРУКТОВ</div>
+
+
+<div class="btm-more"> 
+    <a class="boton-more" href="for_fruits.html">ПОДРОБНЕЕ</a>
+</div>
+
+
+<div class="btm-buy"> 
+    <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+</div>
+
+
+</div>
+
+<div class="card">
+
+
+    <img class="catalog-img" src="static/img/catalog/bottle.jpg">
+    <div class="card-title">ДЛЯ БАНОК И БУТЫЛОК</div>
+    
+    
+    <div class="btm-more"> 
+        <a class="boton-more" href="for_bottes.html">ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+    
+    
+    </div>
+
+<div class="card">
+
+
+    <img class="catalog-img" src="static/img/catalog/meat.jpg">
+        
+    <div class="card-title">ДЛЯ МЯСНЫХ ПОЛУФАБРИКАНТОВ</div>
+        
+        
+    <div class="btm-more"> 
+        <a class="boton-more" href="for_meat.html">ПОДРОБНЕЕ</a>
+    </div>
+        
+        
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+        
+        
+    </div>
+
+
+    <div class="card">
+    
+    
+    <img class="catalog-img" src="static/img/catalog/sweets.jpg">
+    
+    <div class="card-title">ДЛЯ КОНДИТЕРСКИХ ИЗДЕЛИЙ</div>
+    
+    
+    <div class="btm-more"> 
+        <a class="boton-more" href="for_sweets.html">ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+    
+    
+    </div>
+    
+    <div class="card">
+    
+    
+        <img class="catalog-img" src="static/img/catalog/pizza.jpg">
+        <div class="card-title">ДЛЯ ПИЦЦЫ</div>
+        
+        
+        <div class="btm-more"> 
+            <a class="boton-more" href="for_pizza.html">ПОДРОБНЕЕ</a>
+        </div>
+        
+        
+        <div class="btm-buy"> 
+            <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+        </div>
+        
+        
+        </div>
+
+
+    </div> 
+
+
+
+    <div class="catalog-info">
+
+        <h3>КОМПЛЕКТУЮЩИЕ К ГОФРОКОРОБКАМ</h3>
+        
+    </div>
+    
+    <div class="cat-gofrokarton">
+    
+    <div class="card">
+    
+    
+    <img class="catalog-img" src="static/img/catalog/vkladishi.jpg">
+    
+    <div class="card-title">ВКЛАДЫШИ</div>
+    
+    
+    <div class="btm-more"> 
+        <a class="boton-more" href="vkladishi.html">ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+    <div class="btm-buy"> 
+        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+    </div>
+    
+    
+    </div>
+    
+    <div class="card">
+    
+    
+        <img class="catalog-img" src="static/img/catalog/reshitki.jpg">
+        <div class="card-title">РЕШЕТКИ</div>
+        
+        
+        <div class="btm-more"> 
+            <a class="boton-more" href="reshitki.html">ПОДРОБНЕЕ</a>
+        </div>
+        
+        
+        <div class="btm-buy"> 
+            <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+        </div>
+        
+        
+        </div>
+    
+    <div class="card">
+    
+    
+        <img class="catalog-img" src="static/img/catalog/prokladki.jpg">
+            
+        <div class="card-title">ПРОКЛАДКИ</div>
+            
+            
+        <div class="btm-more"> 
+            <a class="boton-more" href="prokladki.html">ПОДРОБНЕЕ</a>
+        </div>
+            
+            
+        <div class="btm-buy"> 
+            <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+        </div>
+            
+            
+        </div>
+    
+    
+    <div class="card">
+        
+        
+        <img class="catalog-img" src="static/img/catalog/vstavki.jpg">
+        
+        <div class="card-title">ВСТАВКИ И ЛОЖМЕНТЫ</div>
+        
+        
+        <div class="btm-more"> 
+            <a class="boton-more" href="vstavki.html">ПОДРОБНЕЕ</a>
+        </div>
+        
+        
+        <div class="btm-buy"> 
+            <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+        </div>
+        
+        
+        </div>
+        
+    <div class="card">
+        
+        
+            <img class="catalog-img" src="static/img/catalog/obechaiki.jpg">
+            <div class="card-title">ОБЕЧАЙКИ</div>
+            
+            
+            <div class="btm-more"> 
+                <a class="boton-more" href="obechaiki.html">ПОДРОБНЕЕ</a>
+            </div>
+            
+            
+            <div class="btm-buy"> 
+                <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+            </div>
+            
+            
+        </div>
+    
+    <div class="card">
+        
+        
+                <img class="catalog-img" src="static/img/catalog/ugolki.jpg">
+                <div class="card-title">УГОЛКИ</div>
+                
+                
+                <div class="btm-more"> 
+                    <a class="boton-more" href="ugolki.html">ПОДРОБНЕЕ</a>
+                </div>
+                
+                
+                <div class="btm-buy"> 
+                    <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+                </div>
+                
+                
+        </div>
+
+        </div>
+
+
+    <div class="catalog-info">
+
+        <h3>УПАКОВОЧНЫЕ МАТЕРИАЛЫ</h3>
+            
+    </div>
+        
+    <div class="cat-gofrokarton">
+        
+    <div class="card">
+        
+        
+        <img class="catalog-img" src="static/img/catalog/lenta_mal.jpg">
+        
+        <div class="card-title">ЛЕНТА МАЛЯРНАЯ</div>
+        
+        
+        <div class="btm-more"> 
+            <a class="boton-more" href="lenta_mal.html">ПОДРОБНЕЕ</a>
+        </div>
+        
+        
+        <div class="btm-buy"> 
+            <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+        </div>
+        
+        
+    </div>
+        
+    <div class="card">
+        
+        
+            <img class="catalog-img" src="static/img/catalog/skotch.jpg">
+            <div class="card-title">СКОТЧ</div>
+            
+            
+            <div class="btm-more"> 
+                <a class="boton-more" href="skotch.html">ПОДРОБНЕЕ</a>
+            </div>
+            
+            
+            <div class="btm-buy"> 
+                <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+            </div>
+            
+            
+        </div>
+        
+    <div class="card">
+        
+        
+            <img class="catalog-img" src="static/img/catalog/dispenser.jpg">
+                
+            <div class="card-title">ДИСПЕНСЕР ДЛЯ СКОТЧА</div>
+                
+                
+            <div class="btm-more"> 
+                <a class="boton-more" href="dispenser.html">ПОДРОБНЕЕ</a>
+            </div>
+                
+                
+            <div class="btm-buy"> 
+                <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+            </div>
+                
+                
+        </div>
+
+        
+    <div class="card">
+            
+            
+            <img class="catalog-img" src="static/img/catalog/strech.jpg">
+            
+            <div class="card-title">СТРЕЧ ПЛЕНКА</div>
+            
+            
+            <div class="btm-more"> 
+                <a class="boton-more" href="strech.html">ПОДРОБНЕЕ</a>
+            </div>
+            
+            
+            <div class="btm-buy"> 
+                <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+            </div>
+            
+            
+        </div>
+            
+    <div class="card">
+            
+            
+                <img class="catalog-img" src="static/img/catalog/skotch_prozr.jpg">
+                <div class="card-title">СКОТЧ ПРОЗРАЧНЫЙ</div>
+                
+                
+                <div class="btm-more"> 
+                    <a class="boton-more" href="skotch_prozr.html">ПОДРОБНЕЕ</a>
+                </div>
+                
+                
+                <div class="btm-buy"> 
+                    <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+                </div>
+                
+                
+        </div>
+        
+    <div class="card">
+            
+            
+                    <img class="catalog-img" src="static/img/catalog/lenta.jpg">
+                    <div class="card-title">СТРЕППИНГ ЛЕНТА</div>
+                    
+                    
+                    <div class="btm-more"> 
+                        <a class="boton-more" href="lenta.html">ПОДРОБНЕЕ</a>
+                    </div>
+                    
+                    
+                    <div class="btm-buy"> 
+                        <a class="boton-buy" href="page4.html">ЗАКАЗАТЬ</a>
+                    </div>
+                    
+                    
+        </div>
+    
+        </div>
+
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+</div>
+
+    <!-- </div> -->
+
+</body>
+
+</html>
