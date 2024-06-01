@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Каталог</title>
+    <link rel= "stylesheet" href = "static/style/style_catalog.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+    <!-- <div class="all"> -->
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+    <div class="logo_menu">
+        <img src="static/img/logo_menu.PNG" alt="лого меню">
+    </div>
+    
+    <div class="menu">
+        <ul>
+    
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="page2.html" class="active">КАТАЛОГ</a>
+        <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+        <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+        <a href="page5.html">КОНТАКТЫ</a>      
+    
+    </ul>
+    
+    </div>
+    
+    <!-- Иконка бургерменю -->
+    <div class="burger">
+        <span></span>
+    </div>
+    
+    </header>
+    
+    <!-- Скрипт для бургерменю -->
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('open');
+        })
+    </script>
+
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<!-- Кнопка НАЗАД -->
+
+<div class="back">
+
+<a href="page2.html"> <<  ВЕРНУТЬСЯ К КАТАЛОГУ</a>
+
+</div>
+
+
+<!-- Каталог товары -->
+<div class="catalog">
+    <!-- Стреч пленка -->
+    <div class="product">
+        <img src="static/img/catalog/strech.jpg" alt="Стретч пленка">
+                                
+        <div class="text">
+        <h3>СТРЕТЧ ПЛЕНКА</h3>
+            <div class="text-info">
+            <p><span>Пленки</span> применяются для упаковки мебели, офисной и бытовой техники, предметов интерьера и так далее. Незаменимо как в быту, так и во время переезда.</p>
+            <p><span>Характеристики:</span></p>
+            <p>Цвета: Белый, Черный</p>
+            <p><span>Размеры:</span></p>
+            <p>1. 500мм, 17 мкр, 2кг</p>
+            <p>2. 500мм, 20 мкр, 1,8кг</p>
+            <p>3. 500мм, 20 мкр, 2кг</p>
+            <p>4. 500мм, 17 мкр, 16кг</p>
+            <p>5. 20 мкр, 500мм, 16кг</p>
+            </div>
+
+            <div class="buttom">
+                <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+</div>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

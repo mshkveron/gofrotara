@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Каталог</title>
+    <link rel= "stylesheet" href = "static/style/style_catalog.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+    <!-- <div class="all"> -->
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+    <div class="logo_menu">
+        <img src="static/img/logo_menu.PNG" alt="лого меню">
+    </div>
+    
+    <div class="menu">
+        <ul>
+    
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="page2.html" class="active">КАТАЛОГ</a>
+        <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+        <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+        <a href="page5.html">КОНТАКТЫ</a>      
+    
+    </ul>
+    
+    </div>
+    
+    <!-- Иконка бургерменю -->
+    <div class="burger">
+        <span></span>
+    </div>
+    
+    </header>
+    
+    <!-- Скрипт для бургерменю -->
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('open');
+        })
+    </script>
+
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<!-- Кнопка НАЗАД -->
+
+<div class="back">
+
+<a href="page2.html"> <<  ВЕРНУТЬСЯ К КАТАЛОГУ</a>
+
+</div>
+
+
+<!-- Каталог товары -->
+<div class="catalog">
+    <!-- Скотч прозрачный -->
+    <div class="product">
+        <img src="static/img/catalog/skotch_prozr.jpg"  alt="Скотч прозрачный и коричневый">
+                                
+        <div class="text">
+        <h3>СКОТЧ ПРОЗРАЧНЫЙ</h3>
+            <div class="text-info">
+            <p><span>Скотч прозрачный</span> применяется при различных работах по упаковке. Всегда в наличии все цвета и размерности скотча. </p>
+            <p><span>Характеристики:</span></p>
+            <p>Цвета: прозрачный, коричневый</p>
+            <p>Размеры:</p>
+            <p>1. Прозрачный: 48мм, 100м, 45 мкр, 36 шт</p>
+            <p>2. Прозрачный: 48мм, 150м, 45 мкр, 30 шт</p>
+            <p>3. Прозрачный: 48мм, 40м, 38 мкр, 72 шт</p>
+            <p>4. Прозрачный: 48мм, 66м, 38 мкр, 72 шт</p>
+            <p>5. Прозрачный: 48мм, 66м, 40 мкр, 36 шт </p>
+            <p>6. Прозрачный: 48мм, 66м, 45 мкр, 36 шт</p>
+            <p>7. Прозрачный: 75мм, 66м, 40 мкр, 24 шт</p>
+            <p>8. Коричневый: 48мм, 150м, 45 мкр, 30 шт</p>
+            <p>9. Коричневый: 48мм, 66м, 45 мкр, 36 шт</p>
+            <p>10. Коричневый: 75мм, 66м, 43 мкр, 24 шт</p>
+            </div>
+
+            <div class="buttom">
+                <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+</div>
+
+    <!-- </div> -->
+
+</body>
+
+</html>
