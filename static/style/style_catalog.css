@@ -1,0 +1,221 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+/* Шрифты текта */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Roboto"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/roboto.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/roboto.woff") format("woff");
+  }
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Вверх сайта с лого */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1edeb;
+}
+.logo>img {
+    height: 100px;
+}
+
+.phone>img {
+    width: 30px;
+}
+
+.phone {
+    display: flex;
+    color: #00a86b;
+}
+
+/* Кнопка наверх */
+.upward {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: url(upward.png);
+    background-size: cover;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.upward.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* МЕНЮ */
+.open {
+    display: flex !important;
+}
+
+.menu a:hover {
+    color: #00a86b;
+      }
+  
+  .menu a.active {
+    color: #00a86b;
+  }
+
+  .logo_menu>img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #e1edeb;
+  }
+
+  .menu ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: #1c1c1c;
+    color: #e1edeb;
+    padding: 0 40px;
+  }
+
+  .menu {
+    display: flex;
+    width: 700px;
+    padding: 0 40px;
+  }
+
+  /* Иконка бургерменю */
+  .burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+  }
+
+  .burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #e1edeb;
+  }
+
+  .burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #e1edeb;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger::before { top:0 }
+
+  .burger::after { bottom: 0 }
+
+  /* Добавляем класс active для анимации иконки бургера */
+  .burger.active span { transform: scale(0) }
+
+  .burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  .burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+
+  /* Кнопка НАЗАД */
+.back {
+    margin-top: 17px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.back>a {
+    padding: 7px;
+    background-color: #00a86b;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+  /* Каталог товары */
+
+.product>img {
+    width: 370px;
+}
+
+span {
+font-weight: bold;
+}
+
+
+.catalog {
+    margin-left: 20%;
+}
+
+.text {
+    display: inline-block;
+    width: 400px;
+    margin: 40px 50px;
+}
+
+.text-info {
+    background-color: #e1edeb;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.buttom a {
+    padding: 7px;
+    background-color: #00a86b;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+
+  /* Инфо компании */
+.logo_2 {
+    background-color: #00a86b;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.end {
+    padding: 2%;
+}
